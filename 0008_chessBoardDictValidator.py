@@ -33,10 +33,12 @@ def isValidChessBoard(chessBoard):
             whiteCount +=1
             if whiteCount >16:
                 return False
-        if piece[0] == 'b':
+        elif piece[0] == 'b':
             blackCount +=1
             if whiteCount >16:
                 return False 
+        else : 
+            return False
     if count.get('bking',0) != 1:
         return False
     if count.get('wking',0) != 1:
